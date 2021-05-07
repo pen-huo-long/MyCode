@@ -1,0 +1,30 @@
+D                                   RRRD          
+D                                  RU  RD         
+D                                RRU    RRRRD     
+D RRRRRRRD                     RRU          RD    
+RRU      RRRD                  U             RD   
+            D                  UL             D   
+            D                   U          DLLL   
+           DL                   U          D      
+           D                    ULL        RRD    
+           RD                     U          D    
+            D                     U          RD   
+            D                     U           D   
+            D                     ULLL       DL   
+            D                        U       D    
+            D                    RRRRU       D    
+            D                    U         DLL    
+            D                    U         D      
+            D                    U      DLLL      
+            D                    ULLL  DL         
+            D                       U  D          
+            D     RRD               U  D          
+            RD    U D               U DL          
+             RD RRU D               U D           
+              RRU   D               U RRRRRRRRRD  
+                    RD     RRD      U          D  
+                     RRRRRRU RRD    U          D  
+                               D   RU          D  
+                               D   U           D  
+                               RRRRU           D  
+                                               RR 
