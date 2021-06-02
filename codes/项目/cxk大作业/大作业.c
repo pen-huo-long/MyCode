@@ -13,7 +13,7 @@ struct Student {
 //全局变量
 int studentsAmount = 0; //学生数
 int subjectsAmount; //学科数
-char subjects[20][100]; //学科名
+char subjects[20][20]; //学科名
 
 //打印菜单
 void printMenu() {
@@ -38,18 +38,16 @@ void addData() {
         scanf("%s", students[i].name);
         printf("学号:");
         scanf("%s", students[i].id);
-        printf("请输入各科成绩:\n");
+        printf("请输入各科成绩:");
         for (int j = 1; j <= subjectsAmount; j++) {
             printf("%s:", subjects[j]);
-            scanf("%d", &students[i].marks[j]);
+            scanf("%d", students[i].marks[j]);
             students[i].total += students[i].marks[j];
         }
         students[i].average = 1.0 * students[i].total / subjectsAmount;
     }
     studentsAmount += sA;
-    printf("添加完成!按任意键返回主菜单");
-    getchar();
-    getchar();
+    printf("添加完成!");
 }
 
 //显示数据
@@ -59,20 +57,16 @@ void showData() {
     for (int i = 1; i <= subjectsAmount; i++) {
         printf("%s\t", subjects[i]);
     }
-    printf("总分\t平均分");
-    printf("\n");
+    
     //数据
     for (int i = 1; i <= studentsAmount; i++) {
         printf("%s\t%s\t", students[i].name, students[i].id);
         for (int j = 1; j <= subjectsAmount; j++) {
             printf("%d\t", students[i].marks[j]);
         }
-        printf("%d\t%.1f", students[i].total, students[i].average);
-        printf("\n");
     }
+
     printf("\n按任意键返回主菜单");
-    getchar();
-    getchar();
 }
 
 int main() {
@@ -84,6 +78,7 @@ int main() {
     printf("请按次序输入学科名:");
     for (int i = 1; i <= subjectsAmount; i++) {
         scanf("%s", subjects[i]);
+        getchar();
     }
     printf("输入完成!按任意键进入菜单");
     getchar();
